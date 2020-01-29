@@ -7,7 +7,7 @@
         "web": "expo start --web",
         "eject": "expo eject",
         "prestorybook": "rnstl",
-        "storybook": "start-storybook",
+        "storybook": "start-storybook -p 7007 --host=0.0.0.0",
         "storybook-android": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook"
     },
     "config": {
@@ -20,26 +20,36 @@
         }
     },
     "dependencies": {
+        "@styled-system/css": "^5.1.4",
         "expo": "~36.0.0",
+        "lodash": "^4.17.15",
         "react": "~16.9.0",
         "react-dom": "~16.9.0",
         "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
         "react-native-elements": "^1.2.7",
+        "react-native-svg": "9.13.3",
         "react-native-web": "~0.11.7",
-        "styled-components": "^5.0.0"
+        "styled-components": "^5.0.0",
+        "styled-system": "^5.1.4"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
-        "@storybook/addon-actions": "^5.3.8",
+        "@expo/webpack-config": "^0.10.11",
+        "@storybook/addon-actions": "^5.3.9",
         "@storybook/addon-knobs": "^5.3.8",
+        "@storybook/addon-links": "^5.3.9",
         "@storybook/addon-ondevice-actions": "^5.3.8",
         "@storybook/addon-ondevice-knobs": "^5.3.8",
         "@storybook/addon-ondevice-notes": "^5.3.8",
-        "@storybook/react-native": "^5.3.8",
-        "@storybook/react-native-server": "^5.3.8",
+        "@storybook/addons": "^5.3.9",
+        "@storybook/react-native": "^5.3.9",
+        "@storybook/react-native-server": "^5.3.9",
         "babel-loader": "^8.0.6",
         "babel-preset-expo": "~8.0.0",
-        "react-native-storybook-loader": "^1.8.1"
+        "react-native-storybook-loader": "^1.8.1",
+        "react-native-svg-transformer": "^0.14.3",
+        "react-svg-loader": "^3.0.3",
+        "svg-inline-loader": "^0.8.0"
     },
     "private": true
 }

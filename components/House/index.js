@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, ActivityIndicator, Text, FlatList } from 'react-native'
 import { Icon, Image } from 'react-native-elements'
+import RegionBadge from '../RegionBadge/'
 
 import styled from 'styled-components/native'
 
@@ -110,9 +111,9 @@ export default function House({
                 </View>
                 <View>
                     {region && (
-                        <InlineText>
+                        <InlineText style={{ alignItems: 'center' }}>
                             <InfoLabel>Region:</InfoLabel>
-                            <InfoText>{region}</InfoText>
+                            <RegionBadge region={region} />
                         </InlineText>
                     )}
                     {seat && (

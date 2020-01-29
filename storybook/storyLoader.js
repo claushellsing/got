@@ -5,10 +5,12 @@
 
 function loadStories() {
 	require('../components/House/stories');
+	require('../components/RegionBadge/stories');
 }
 
 const stories = [
-	'../components/House/stories'
+	'../components/House/stories',
+	'../components/RegionBadge/stories'
 ];
 
 module.exports = {
