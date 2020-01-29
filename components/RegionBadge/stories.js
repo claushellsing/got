@@ -26,12 +26,10 @@ storiesOf('RegionBadge', module)
     })
     .add('All', () => {
         return (
-            <React.Fragment>
-                <ScrollView>
-                    {regions.map(region => {
-                        return <RegionBadge region={region} key={region} />
-                    })}
-                </ScrollView>
-            </React.Fragment>
+            <ScrollView>
+                {regions.map(region => {
+                    return <RegionBadge region={region} key={region} />
+                })}
+            </ScrollView>
         )
     })
