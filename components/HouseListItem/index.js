@@ -1,7 +1,22 @@
 import React from 'react'
-import { ListItem } from 'react-native-elements'
-import styled from 'styled-components/native'
+import { ListItem, Avatar } from 'react-native-elements'
 
-export default function HouseListItem({ name }) {
-    return <ListItem title={name} />
+export default function HouseListItem({ name, image, region }) {
+    return (
+        <ListItem
+            title={name}
+            subtitle={region}
+            leftAvatar={
+                <Avatar
+                    rounded
+                    title=""
+                    activeOpacity={0.3}
+                    source={{ uri: image }}
+                    containerStyle={{ marginRight: 10 }}
+                />
+            }
+            bottomDivider
+            chevron
+        />
+    )
 }
