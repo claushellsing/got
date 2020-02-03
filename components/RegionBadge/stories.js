@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 import { View, ScrollView } from 'react-native'
-import RegionBadge from './index'
+import RegionBadge from '@components/RegionBadge'
 import HouseData from '../../storybook/data'
 import { uniq } from 'lodash'
 

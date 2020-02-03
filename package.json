@@ -45,6 +45,7 @@
         "@storybook/react-native": "^5.3.9",
         "@storybook/react-native-server": "^5.3.9",
         "babel-loader": "^8.0.6",
+        "babel-plugin-module-resolver": "^4.0.0",
         "babel-preset-expo": "~8.0.0",
         "react-native-storybook-loader": "^1.8.1",
         "react-native-svg-transformer": "^0.14.3",
